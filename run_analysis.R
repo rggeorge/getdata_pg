@@ -19,7 +19,6 @@ dat <- rbind(trainfull, testfull, deparse.level=1)
 cols <- c(grep('^(.*mean\\(.*|.*std.*|subject|label)$', names(dat))) 
 
 subdat <- dat[,cols]
-subdat <- cbind(subdat, )
 
 # Uses descriptive activity names to name the activities in the data set
 subs <- rbind(
